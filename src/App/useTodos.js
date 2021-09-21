@@ -1,6 +1,11 @@
 import React from 'react';
 import { useLocalStorage } from './useLocalStorage';
 
+<<<<<<< HEAD:src/App/useTodos.js
+=======
+
+
+>>>>>>> curse:src/App/useTodos.js
 function useTodos() {
   const {
     item: todos,
@@ -49,22 +54,23 @@ function useTodos() {
     newTodos.splice(todoIndex, 1);
     saveTodos(newTodos);
   };
-  
-  return {
-    loading,
-    error,
-    totalTodos,
-    completedTodos,
-    searchValue,
-    setSearchValue,
-    searchedTodos,
-    addTodo,
-    completeTodo,
-    deleteTodo,
-    openModal,
-    setOpenModal,
-    sincronizeTodos,
-  };
+
+  return (
+    {
+      loading,
+      error,
+      totalTodos,
+      completedTodos,
+      searchValue,
+      setSearchValue,
+      searchedTodos,
+      addTodo,
+      completeTodo,
+      deleteTodo,
+      openModal,
+      setOpenModal,
+    }
+  );
 }
 
 export { useTodos };
